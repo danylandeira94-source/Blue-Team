@@ -1,0 +1,406 @@
+{
+  "_index": ".ds-logs-suricata.eve-default-2026.01.27-000001",
+  "_id": "AZwLx06DxbYEuH70PYfh",
+  "_version": 1,
+  "_ignored": [
+    "suricata.eve.tcp.tc_max_regions",
+    "suricata.eve.tcp.ts_max_regions"
+  ],
+  "_source": {
+    "@timestamp": "2026-01-29T22:02:58.870Z",
+    "agent": {
+      "ephemeral_id": "1f66671e-1ad3-4ea0-81c9-6da6b1ad59fd",
+      "id": "03403309-7d88-4247-a4bb-2bf501bcd325",
+      "name": "kali",
+      "type": "filebeat",
+      "version": "9.2.4"
+    },
+    "data_stream": {
+      "dataset": "suricata.eve",
+      "namespace": "default",
+      "type": "logs"
+    },
+    "destination": {
+      "address": "34.58.81.221",
+      "as": {
+        "number": 396982,
+        "organization": {
+          "name": "Google LLC"
+        }
+      },
+      "bytes": 6083,
+      "geo": {
+        "city_name": "Council Bluffs",
+        "continent_name": "North America",
+        "country_iso_code": "US",
+        "country_name": "United States",
+        "location": {
+          "lat": 41.259099994786084,
+          "lon": -95.85170005448163
+        },
+        "region_iso_code": "US-IA",
+        "region_name": "Iowa"
+      },
+      "ip": "34.58.81.221",
+      "packets": 14,
+      "port": 443
+    },
+    "ecs": {
+      "version": "8.17.0"
+    },
+    "elastic_agent": {
+      "id": "03403309-7d88-4247-a4bb-2bf501bcd325",
+      "snapshot": false,
+      "version": "9.2.4"
+    },
+    "event": {
+      "agent_id_status": "verified",
+      "category": [
+        "network"
+      ],
+      "created": "2026-01-29T22:02:59.043Z",
+      "dataset": "suricata.eve",
+      "duration": 3692000000,
+      "end": "2026-01-29T22:01:55.248Z",
+      "ingested": "2026-01-29T22:02:59Z",
+      "kind": "event",
+      "start": "2026-01-29T22:01:51.556Z",
+      "type": [
+        "connection",
+        "end"
+      ]
+    },
+    "input": {
+      "type": "log"
+    },
+    "log": {
+      "file": {
+        "path": "/var/log/suricata/eve.json"
+      },
+      "offset": 7930326
+    },
+    "network": {
+      "bytes": 20807,
+      "community_id": "1:Y32wt5AQ51Zb6t+w6l34SufVT/Y=",
+      "packets": 37,
+      "protocol": "tls",
+      "transport": "tcp"
+    },
+    "observer": {
+      "hostname": "kali",
+      "ip": [
+        "192.168.250.100",
+        "fe80::6ae:3228:146f:be4",
+        "172.17.0.1",
+        "fe80::42:7fff:feeb:973e"
+      ],
+      "mac": [
+        "02-42-7F-EB-97-3E",
+        "08-00-27-1F-B7-23"
+      ],
+      "product": "Suricata",
+      "type": "ids",
+      "vendor": "OISF"
+    },
+    "related": {
+      "ip": [
+        "192.168.250.100",
+        "34.58.81.221"
+      ]
+    },
+    "source": {
+      "address": "192.168.250.100",
+      "bytes": 14724,
+      "ip": "192.168.250.100",
+      "packets": 23,
+      "port": 43802
+    },
+    "suricata": {
+      "eve": {
+        "event_type": "flow",
+        "flow": {
+          "age": 4,
+          "alerted": false,
+          "reason": "timeout",
+          "state": "closed",
+          "tx_cnt": 1
+        },
+        "flow_id": "2109693229483898",
+        "in_iface": "eth0",
+        "ip_v": 4,
+        "tcp": {
+          "ack": true,
+          "fin": true,
+          "psh": true,
+          "rst": true,
+          "state": "closed",
+          "syn": true,
+          "tc_max_regions": 1,
+          "tcp_flags": "1f",
+          "tcp_flags_tc": "1b",
+          "tcp_flags_ts": "1f",
+          "ts_max_regions": 1
+        }
+      }
+    },
+    "tags": [
+      "forwarded",
+      "suricata-eve"
+    ]
+  },
+  "fields": {
+    "elastic_agent.version": [
+      "9.2.4"
+    ],
+    "event.category": [
+      "network"
+    ],
+    "suricata.eve.tcp.fin": [
+      true
+    ],
+    "suricata.eve.tcp.ack": [
+      true
+    ],
+    "suricata.eve.tcp.state": [
+      "closed"
+    ],
+    "suricata.eve.tcp.tcp_flags": [
+      "1f"
+    ],
+    "observer.vendor": [
+      "OISF"
+    ],
+    "suricata.eve.tcp.tcp_flags_tc": [
+      "1b"
+    ],
+    "destination.geo.region_name": [
+      "Iowa"
+    ],
+    "source.ip": [
+      "192.168.250.100"
+    ],
+    "agent.name": [
+      "kali"
+    ],
+    "destination.address": [
+      "34.58.81.221"
+    ],
+    "suricata.eve.event_type": [
+      "flow"
+    ],
+    "suricata.eve.flow.reason": [
+      "timeout"
+    ],
+    "network.community_id": [
+      "1:Y32wt5AQ51Zb6t+w6l34SufVT/Y="
+    ],
+    "observer.mac": [
+      "02-42-7F-EB-97-3E",
+      "08-00-27-1F-B7-23"
+    ],
+    "event.agent_id_status": [
+      "verified"
+    ],
+    "event.kind": [
+      "event"
+    ],
+    "suricata.eve.flow_id": [
+      "2109693229483898"
+    ],
+    "source.packets": [
+      23
+    ],
+    "suricata.eve.flow.tx_cnt": [
+      1
+    ],
+    "suricata.eve.tcp.tcp_flags_ts": [
+      "1f"
+    ],
+    "network.packets": [
+      37
+    ],
+    "destination.geo.continent_name": [
+      "North America"
+    ],
+    "input.type": [
+      "log"
+    ],
+    "log.offset": [
+      7930326
+    ],
+    "suricata.eve.in_iface": [
+      "eth0"
+    ],
+    "data_stream.type": [
+      "logs"
+    ],
+    "tags": [
+      "forwarded",
+      "suricata-eve"
+    ],
+    "destination.geo.city_name": [
+      "Council Bluffs"
+    ],
+    "agent.id": [
+      "03403309-7d88-4247-a4bb-2bf501bcd325"
+    ],
+    "source.port": [
+      43802
+    ],
+    "ecs.version": [
+      "8.17.0"
+    ],
+    "observer.type": [
+      "ids"
+    ],
+    "event.created": [
+      "2026-01-29T22:02:59.043Z"
+    ],
+    "suricata.eve.tcp.ts_max_regions": [
+      1
+    ],
+    "agent.version": [
+      "9.2.4"
+    ],
+    "destination.bytes": [
+      6083
+    ],
+    "destination.geo.country_name": [
+      "United States"
+    ],
+    "destination.geo.region_iso_code": [
+      "US-IA"
+    ],
+    "event.start": [
+      "2026-01-29T22:01:51.556Z"
+    ],
+    "observer.ip": [
+      "192.168.250.100",
+      "fe80::6ae:3228:146f:be4",
+      "172.17.0.1",
+      "fe80::42:7fff:feeb:973e"
+    ],
+    "destination.port": [
+      443
+    ],
+    "suricata.eve.tcp.syn": [
+      true
+    ],
+    "event.end": [
+      "2026-01-29T22:01:55.248Z"
+    ],
+    "suricata.eve.tcp.psh": [
+      true
+    ],
+    "source.address": [
+      "192.168.250.100"
+    ],
+    "destination.geo.location": [
+      {
+        "coordinates": [
+          -95.85170005448163,
+          41.259099994786084
+        ],
+        "type": "Point"
+      }
+    ],
+    "destination.packets": [
+      14
+    ],
+    "agent.type": [
+      "filebeat"
+    ],
+    "event.module": [
+      "suricata"
+    ],
+    "network.protocol": [
+      "tls"
+    ],
+    "suricata.eve.flow.state": [
+      "closed"
+    ],
+    "related.ip": [
+      "192.168.250.100",
+      "34.58.81.221"
+    ],
+    "network.bytes": [
+      20807
+    ],
+    "observer.product": [
+      "Suricata"
+    ],
+    "elastic_agent.snapshot": [
+      false
+    ],
+    "source.bytes": [
+      14724
+    ],
+    "suricata.eve.flow.alerted": [
+      false
+    ],
+    "elastic_agent.id": [
+      "03403309-7d88-4247-a4bb-2bf501bcd325"
+    ],
+    "data_stream.namespace": [
+      "default"
+    ],
+    "suricata.eve.flow.age": [
+      4
+    ],
+    "destination.as.number": [
+      396982
+    ],
+    "suricata.eve.ip_v": [
+      4
+    ],
+    "destination.as.organization.name.text": [
+      "Google LLC"
+    ],
+    "destination.ip": [
+      "34.58.81.221"
+    ],
+    "observer.hostname": [
+      "kali"
+    ],
+    "network.transport": [
+      "tcp"
+    ],
+    "event.duration": [
+      3692000000
+    ],
+    "event.ingested": [
+      "2026-01-29T22:02:59.000Z"
+    ],
+    "@timestamp": [
+      "2026-01-29T22:02:58.870Z"
+    ],
+    "suricata.eve.tcp.tc_max_regions": [
+      1
+    ],
+    "destination.geo.country_iso_code": [
+      "US"
+    ],
+    "data_stream.dataset": [
+      "suricata.eve"
+    ],
+    "event.type": [
+      "connection",
+      "end"
+    ],
+    "log.file.path": [
+      "/var/log/suricata/eve.json"
+    ],
+    "agent.ephemeral_id": [
+      "1f66671e-1ad3-4ea0-81c9-6da6b1ad59fd"
+    ],
+    "suricata.eve.tcp.rst": [
+      true
+    ],
+    "event.dataset": [
+      "suricata.eve"
+    ],
+    "destination.as.organization.name": [
+      "Google LLC"
+    ]
+  }
+}

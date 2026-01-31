@@ -1,0 +1,339 @@
+{
+  "_index": ".ds-logs-system.security-default-2026.01.29-000001",
+  "_id": "AZwLLE6DxbYEuH6ULqOH",
+  "_version": 1,
+  "_source": {
+    "@timestamp": "2026-01-29T19:13:05.750Z",
+    "agent": {
+      "ephemeral_id": "c3dd7e5a-4ccc-4532-8dec-d4fd4899c314",
+      "id": "f6dfae77-5427-4c5d-bb61-1393ff60186f",
+      "name": "Windows10",
+      "type": "filebeat",
+      "version": "9.2.4"
+    },
+    "data_stream": {
+      "dataset": "system.security",
+      "namespace": "default",
+      "type": "logs"
+    },
+    "ecs": {
+      "version": "8.11.0"
+    },
+    "elastic_agent": {
+      "id": "f6dfae77-5427-4c5d-bb61-1393ff60186f",
+      "snapshot": false,
+      "version": "9.2.4"
+    },
+    "event": {
+      "action": "logged-in-special",
+      "agent_id_status": "verified",
+      "category": [
+        "iam"
+      ],
+      "code": "4672",
+      "created": "2026-01-29T19:13:07.478Z",
+      "dataset": "system.security",
+      "ingested": "2026-01-29T19:13:16Z",
+      "kind": "event",
+      "outcome": "success",
+      "provider": "Microsoft-Windows-Security-Auditing",
+      "type": [
+        "admin"
+      ]
+    },
+    "host": {
+      "architecture": "x86_64",
+      "hostname": "Windows10",
+      "id": "b03073f0-8c78-41e8-81ed-eb67037c01c4",
+      "ip": [
+        "fe80::6aa3:e3a2:9f5b:29c7",
+        "192.168.100.101"
+      ],
+      "mac": [
+        "08-00-27-DF-3A-79"
+      ],
+      "name": "windows10",
+      "os": {
+        "build": "19045.5247",
+        "family": "windows",
+        "kernel": "10.0.19041.5247 (WinBuild.160101.0800)",
+        "name": "Windows 10 Home",
+        "platform": "windows",
+        "type": "windows",
+        "version": "10.0"
+      }
+    },
+    "input": {
+      "type": "winlog"
+    },
+    "log": {
+      "level": "información"
+    },
+    "message": "Se asignaron privilegios especiales a un nuevo inicio de sesión.\n\nSujeto:\n\tId. de seguridad:\t\tS-1-5-18\n\tNombre de cuenta:\t\tSYSTEM\n\tDominio de cuenta:\t\tNT AUTHORITY\n\tId. de inicio de sesión:\t\t0x3E7\n\nPrivilegios:\t\tSeAssignPrimaryTokenPrivilege\n\t\t\tSeTcbPrivilege\n\t\t\tSeSecurityPrivilege\n\t\t\tSeTakeOwnershipPrivilege\n\t\t\tSeLoadDriverPrivilege\n\t\t\tSeBackupPrivilege\n\t\t\tSeRestorePrivilege\n\t\t\tSeDebugPrivilege\n\t\t\tSeAuditPrivilege\n\t\t\tSeSystemEnvironmentPrivilege\n\t\t\tSeImpersonatePrivilege\n\t\t\tSeDelegateSessionUserImpersonatePrivilege",
+    "related": {
+      "user": [
+        "SYSTEM"
+      ]
+    },
+    "user": {
+      "domain": "NT AUTHORITY",
+      "id": "S-1-5-18",
+      "name": "SYSTEM"
+    },
+    "winlog": {
+      "activity_id": "{c369c4a2-9150-0001-76c5-69c35091dc01}",
+      "channel": "Security",
+      "computer_name": "Windows10",
+      "event_data": {
+        "PrivilegeList": [
+          "SeAssignPrimaryTokenPrivilege",
+          "SeTcbPrivilege",
+          "SeSecurityPrivilege",
+          "SeTakeOwnershipPrivilege",
+          "SeLoadDriverPrivilege",
+          "SeBackupPrivilege",
+          "SeRestorePrivilege",
+          "SeDebugPrivilege",
+          "SeAuditPrivilege",
+          "SeSystemEnvironmentPrivilege",
+          "SeImpersonatePrivilege",
+          "SeDelegateSessionUserImpersonatePrivilege"
+        ],
+        "SubjectDomainName": "NT AUTHORITY",
+        "SubjectLogonId": "0x3e7",
+        "SubjectUserName": "SYSTEM",
+        "SubjectUserSid": "S-1-5-18"
+      },
+      "event_id": "4672",
+      "keywords": [
+        "Auditoría correcta"
+      ],
+      "logon": {
+        "id": "0x3e7"
+      },
+      "opcode": "Información",
+      "process": {
+        "pid": 692,
+        "thread": {
+          "id": 732
+        }
+      },
+      "provider_guid": "{54849625-5478-4994-a5ba-3e3b0328c30d}",
+      "provider_name": "Microsoft-Windows-Security-Auditing",
+      "record_id": "11085",
+      "task": "Special Logon"
+    }
+  },
+  "fields": {
+    "elastic_agent.version": [
+      "9.2.4"
+    ],
+    "event.category": [
+      "iam"
+    ],
+    "host.os.name.text": [
+      "Windows 10 Home"
+    ],
+    "winlog.provider_guid": [
+      "{54849625-5478-4994-a5ba-3e3b0328c30d}"
+    ],
+    "winlog.provider_name": [
+      "Microsoft-Windows-Security-Auditing"
+    ],
+    "host.hostname": [
+      "Windows10"
+    ],
+    "winlog.computer_name": [
+      "Windows10"
+    ],
+    "host.mac": [
+      "08-00-27-DF-3A-79"
+    ],
+    "winlog.process.pid": [
+      692
+    ],
+    "agent.name.text": [
+      "Windows10"
+    ],
+    "host.os.version": [
+      "10.0"
+    ],
+    "winlog.keywords": [
+      "Auditoría correcta"
+    ],
+    "winlog.record_id": [
+      "11085"
+    ],
+    "winlog.logon.id": [
+      "0x3e7"
+    ],
+    "host.os.name": [
+      "Windows 10 Home"
+    ],
+    "log.level": [
+      "información"
+    ],
+    "agent.name": [
+      "Windows10"
+    ],
+    "host.name": [
+      "windows10"
+    ],
+    "event.agent_id_status": [
+      "verified"
+    ],
+    "event.kind": [
+      "event"
+    ],
+    "winlog.activity_id": [
+      "{c369c4a2-9150-0001-76c5-69c35091dc01}"
+    ],
+    "event.outcome": [
+      "success"
+    ],
+    "host.os.type": [
+      "windows"
+    ],
+    "user.id": [
+      "S-1-5-18"
+    ],
+    "input.type": [
+      "winlog"
+    ],
+    "data_stream.type": [
+      "logs"
+    ],
+    "related.user": [
+      "SYSTEM"
+    ],
+    "host.architecture": [
+      "x86_64"
+    ],
+    "event.provider": [
+      "Microsoft-Windows-Security-Auditing"
+    ],
+    "event.code": [
+      "4672"
+    ],
+    "agent.id": [
+      "f6dfae77-5427-4c5d-bb61-1393ff60186f"
+    ],
+    "ecs.version": [
+      "8.11.0"
+    ],
+    "event.created": [
+      "2026-01-29T19:13:07.478Z"
+    ],
+    "agent.version": [
+      "9.2.4"
+    ],
+    "host.os.family": [
+      "windows"
+    ],
+    "winlog.event_data.SubjectUserSid": [
+      "S-1-5-18"
+    ],
+    "winlog.process.thread.id": [
+      732
+    ],
+    "winlog.event_data.PrivilegeList": [
+      "SeAssignPrimaryTokenPrivilege",
+      "SeTcbPrivilege",
+      "SeSecurityPrivilege",
+      "SeTakeOwnershipPrivilege",
+      "SeLoadDriverPrivilege",
+      "SeBackupPrivilege",
+      "SeRestorePrivilege",
+      "SeDebugPrivilege",
+      "SeAuditPrivilege",
+      "SeSystemEnvironmentPrivilege",
+      "SeImpersonatePrivilege",
+      "SeDelegateSessionUserImpersonatePrivilege"
+    ],
+    "user.name": [
+      "SYSTEM"
+    ],
+    "host.os.build": [
+      "19045.5247"
+    ],
+    "host.ip": [
+      "fe80::6aa3:e3a2:9f5b:29c7",
+      "192.168.100.101"
+    ],
+    "agent.type": [
+      "filebeat"
+    ],
+    "event.module": [
+      "system"
+    ],
+    "winlog.event_data.SubjectLogonId": [
+      "0x3e7"
+    ],
+    "host.os.kernel": [
+      "10.0.19041.5247 (WinBuild.160101.0800)"
+    ],
+    "elastic_agent.snapshot": [
+      false
+    ],
+    "user.domain": [
+      "NT AUTHORITY"
+    ],
+    "host.id": [
+      "b03073f0-8c78-41e8-81ed-eb67037c01c4"
+    ],
+    "winlog.task": [
+      "Special Logon"
+    ],
+    "elastic_agent.id": [
+      "f6dfae77-5427-4c5d-bb61-1393ff60186f"
+    ],
+    "data_stream.namespace": [
+      "default"
+    ],
+    "winlog.event_data.SubjectUserName": [
+      "SYSTEM"
+    ],
+    "message": [
+      "Se asignaron privilegios especiales a un nuevo inicio de sesión.\n\nSujeto:\n\tId. de seguridad:\t\tS-1-5-18\n\tNombre de cuenta:\t\tSYSTEM\n\tDominio de cuenta:\t\tNT AUTHORITY\n\tId. de inicio de sesión:\t\t0x3E7\n\nPrivilegios:\t\tSeAssignPrimaryTokenPrivilege\n\t\t\tSeTcbPrivilege\n\t\t\tSeSecurityPrivilege\n\t\t\tSeTakeOwnershipPrivilege\n\t\t\tSeLoadDriverPrivilege\n\t\t\tSeBackupPrivilege\n\t\t\tSeRestorePrivilege\n\t\t\tSeDebugPrivilege\n\t\t\tSeAuditPrivilege\n\t\t\tSeSystemEnvironmentPrivilege\n\t\t\tSeImpersonatePrivilege\n\t\t\tSeDelegateSessionUserImpersonatePrivilege"
+    ],
+    "winlog.event_id": [
+      "4672"
+    ],
+    "event.action": [
+      "logged-in-special"
+    ],
+    "event.ingested": [
+      "2026-01-29T19:13:16.000Z"
+    ],
+    "@timestamp": [
+      "2026-01-29T19:13:05.750Z"
+    ],
+    "winlog.channel": [
+      "Security"
+    ],
+    "host.os.platform": [
+      "windows"
+    ],
+    "data_stream.dataset": [
+      "system.security"
+    ],
+    "event.type": [
+      "admin"
+    ],
+    "winlog.opcode": [
+      "Información"
+    ],
+    "agent.ephemeral_id": [
+      "c3dd7e5a-4ccc-4532-8dec-d4fd4899c314"
+    ],
+    "winlog.event_data.SubjectDomainName": [
+      "NT AUTHORITY"
+    ],
+    "event.dataset": [
+      "system.security"
+    ],
+    "user.name.text": [
+      "SYSTEM"
+    ]
+  }
+}
